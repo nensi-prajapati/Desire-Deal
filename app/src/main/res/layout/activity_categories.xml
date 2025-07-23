@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.categories">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_110sdp"
+            android:layout_gravity="start">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/img_4"
+                    android:scaleType="centerCrop"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="start"
+                    android:paddingStart="@dimen/_2sdp"
+                    android:paddingTop="@dimen/_20sdp"
+                    android:paddingEnd="@dimen/_10sdp">
+
+                    <ImageView
+                        android:id="@+id/back_icon"
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:src="@drawable/ic_left_foreground"
+                        android:layout_gravity="center_vertical"/>
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Dress"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_15sdp"/>
+
+                    <ImageView
+                        android:layout_width="@dimen/_23sdp"
+                        android:layout_height="@dimen/_23sdp"
+                        android:layout_marginStart="@dimen/_140sdp"
+                        android:src="@drawable/ic_search"
+                        android:layout_gravity="center_vertical"/>
+
+                    <ImageView
+                        android:id="@+id/addtocart"
+                        android:layout_width="@dimen/_23sdp"
+                        android:layout_height="@dimen/_23sdp"
+                        android:src="@drawable/ic_cart"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:layout_gravity="center_vertical"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_80sdp"
+                    android:orientation="horizontal"
+                    android:paddingStart="@dimen/_18sdp">
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <HorizontalScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:scrollbars="none"
+                            >
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                        <com.google.android.material.tabs.TabLayout
+                            android:id="@+id/tabLayout"
+                            style="@style/MyTabLayout"
+                            app:tabMinWidth="50dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:tabPaddingTop="@dimen/_5sdp"
+                            app:tabPaddingBottom="@dimen/_5sdp"
+                            android:background="#00000000"
+                            android:hapticFeedbackEnabled="true"
+                            app:tabIndicatorColor="@color/pink"
+                            app:tabIndicatorFullWidth="false"
+                            app:tabIndicatorHeight="@dimen/_2sdp"
+                            app:tabTextColor="@color/darksgray"
+                            app:tabSelectedTextColor="@color/white"
+                            app:tabMode="scrollable"
+                            app:tabGravity="fill"
+                            tools:ignore="MissingConstraints">
+
+                        </com.google.android.material.tabs.TabLayout>
+
+                       </LinearLayout>
+
+                        </HorizontalScrollView>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <androidx.viewpager.widget.ViewPager
+
+            android:id="@+id/viewpagecat"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:background="@color/lightpink"
+            app:layout_constraintTop_toBottomOf="@+id/tabLayout">
+
+        </androidx.viewpager.widget.ViewPager>
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

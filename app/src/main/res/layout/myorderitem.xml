@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/_20sdp"
+        android:layout_margin="@dimen/_10sdp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <RelativeLayout
+                android:id="@+id/image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:layout_marginStart="@dimen/_12sdp"
+                    app:cardElevation="@dimen/_13sdp"
+                    android:visibility="visible">
+
+                    <ImageView
+                        android:id="@+id/AddtoCartImage"
+                        android:layout_width="@dimen/_70sdp"
+                        android:layout_height="@dimen/_70sdp"
+                        android:src="@drawable/category_tshirt"
+                        android:scaleType="centerCrop"/>
+
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/Detail"
+                android:layout_toRightOf="@+id/image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginVertical="@dimen/_15sdp"
+                android:layout_marginHorizontal="@dimen/_12sdp">
+
+                <TextView
+                    android:id="@+id/AddtoCartName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Wolks Blue Top"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    />
+
+                <TextView
+                    android:id="@+id/AddtoCartPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="₹400"
+                    android:textSize="@dimen/_12sdp"
+                    android:layout_alignParentEnd="true"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

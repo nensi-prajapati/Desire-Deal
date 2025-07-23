@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".DesireDeal"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/secondlogo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.DesireDeal"
+        tools:targetApi="31">
+        <activity
+            android:name=".activity.MyOrders"
+            android:exported="false" />
+        <activity
+            android:name=".activity.Search"
+            android:exported="false" />
+        <activity
+            android:name=".activity.selectuser"
+            android:exported="false" />
+        <activity
+            android:name=".activity.Profile"
+            android:exported="false" />
+        <activity
+            android:name=".activity.HelpCenter"
+            android:exported="false" />
+        <activity
+            android:name=".activity.WishlistActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.OrderPlaced"
+            android:exported="false" />
+        <activity
+            android:name=".activity.Payment"
+            android:exported="false" />
+        <activity
+            android:name=".activity.Address"
+            android:exported="false" />
+        <activity
+            android:name=".activity.MyAccount"
+            android:exported="false" />
+        <activity
+            android:name=".activity.CheckOut"
+            android:exported="false" />
+        <activity
+            android:name=".activity.AddToCart"
+            android:exported="false" />
+        <activity
+            android:name=".activity.categories"
+            android:exported="false"
+            android:theme="@style/Theme.Splash" />
+        <activity
+            android:name=".activity.DetailedActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.Forgotpassword"
+            android:exported="false" />
+        <activity
+            android:name=".activity.AdminMainPanel"
+            android:exported="false" />
+        <activity
+            android:name=".activity.Signup"
+            android:exported="false"
+            android:theme="@style/Theme.Splash" />
+        <activity
+            android:name=".activity.Login"
+            android:exported="false"
+            android:theme="@style/Theme.Splash" />
+        <activity
+            android:name=".activity.Welcome"
+            android:exported="false"
+            android:theme="@style/Theme.Splash" />
+        <activity
+            android:name=".activity.IntroActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Splash" />
+        <activity
+            android:name=".activity.MainActivity"
+            android:configChanges="uiMode"
+            android:exported="false"
+            android:theme="@style/Theme.DesireDeal" />
+        <activity
+            android:name=".activity.splash"
+            android:exported="true"
+            android:theme="@style/Theme.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

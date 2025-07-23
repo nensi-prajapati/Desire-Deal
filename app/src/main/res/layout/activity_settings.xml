@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.Settings">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar1"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/pink"
+        app:title="Settings"
+        app:titleTextColor="@color/white">
+
+    </com.google.android.material.appbar.MaterialToolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar1">
+
+        <TextView
+            android:id="@+id/textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Display Setting"
+            android:textSize="@dimen/_15sdp"
+            android:textStyle="bold"
+            android:layout_margin="@dimen/_10sdp"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

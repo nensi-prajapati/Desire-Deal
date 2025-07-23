@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.Profile">
+
+<!--    <com.google.android.material.appbar.MaterialToolbar-->
+<!--        android:id="@+id/toolbar"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="?attr/actionBarSize"-->
+<!--        android:background="@color/pink"-->
+<!--        app:title="My Account"-->
+<!--        app:titleTextColor="@color/white">-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/addtocart"-->
+<!--            android:layout_width="@dimen/_25sdp"-->
+<!--            android:layout_height="@dimen/_25sdp"-->
+<!--            android:layout_gravity="end"-->
+<!--            android:layout_marginEnd="@dimen/_10sdp"-->
+<!--            android:src="@drawable/ic_cart" />-->
+
+<!--    </com.google.android.material.appbar.MaterialToolbar>-->
+
+<!--    <RelativeLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginHorizontal="@dimen/_5sdp"-->
+<!--        android:layout_marginTop="?attr/actionBarSize"-->
+<!--        android:id="@+id/details">-->
+
+<!--        <RelativeLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="@dimen/_12sdp">-->
+
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:id="@+id/userimage"-->
+<!--                android:layout_width="@dimen/_65sdp"-->
+<!--                android:layout_height="@dimen/_65sdp"-->
+<!--                android:layout_centerHorizontal="true"-->
+<!--                app:cardCornerRadius="@dimen/_100sdp">-->
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/uer_image"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:scaleType="fitXY"-->
+<!--                    android:src="@drawable/logomain"/>-->
+
+
+<!--            </androidx.cardview.widget.CardView>-->
+
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:id="@+id/addphoto"-->
+<!--                android:layout_width="@dimen/_25sdp"-->
+<!--                android:layout_height="@dimen/_25sdp"-->
+<!--                android:layout_marginTop="@dimen/_40sdp"-->
+<!--                android:layout_marginStart="@dimen/_165sdp"-->
+<!--                app:cardCornerRadius="@dimen/_100sdp">-->
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/imageofuser"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:scaleType="fitXY"-->
+<!--                    android:src="@drawable/logomain"/>-->
+
+
+<!--            </androidx.cardview.widget.CardView>-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:id="@+id/username"-->
+<!--                android:layout_below="@id/userimage"-->
+<!--                android:layout_marginTop="@dimen/_8sdp"-->
+<!--                android:textSize="@dimen/_13sdp"-->
+<!--                android:textStyle="bold"-->
+<!--                android:textColor="@color/pink"-->
+<!--                android:layout_centerHorizontal="true"-->
+<!--                android:text="Username"/>-->
+
+<!--            <RelativeLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@+id/username"-->
+<!--                android:id="@+id/selectagender"-->
+<!--                >-->
+
+<!--                <GridLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:id="@+id/grid"-->
+<!--                    >-->
+<!--                    <EditText-->
+<!--                        android:id="@+id/edit_text_1"-->
+<!--                        android:layout_width="@dimen/_150sdp"-->
+<!--                        android:layout_height="@dimen/_40sdp"-->
+<!--                        android:hint="First Name"-->
+<!--                        android:layout_marginEnd="@dimen/_2sdp"-->
+<!--                        android:textSize="@dimen/_12sdp"-->
+<!--                        android:drawableLeft="@drawable/ic_user_foreground"/>-->
+
+<!--                    <EditText-->
+<!--                        android:id="@+id/edit_text"-->
+<!--                        android:layout_width="@dimen/_150sdp"-->
+<!--                        android:layout_height="@dimen/_40sdp"-->
+<!--                        android:hint="First Name"-->
+<!--                        android:textSize="@dimen/_12sdp"-->
+<!--                        android:drawableLeft="@drawable/ic_user_foreground"/>-->
+<!--                </GridLayout>-->
+
+<!--                <EditText-->
+<!--                    android:id="@+id/edit_text_email"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="@dimen/_40sdp"-->
+<!--                    android:hint="Email Address"-->
+<!--                    android:layout_below="@+id/grid"-->
+<!--                    android:textSize="@dimen/_12sdp"-->
+<!--                    android:drawableLeft="@drawable/ic_email_foreground"/>-->
+
+<!--                <RelativeLayout-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_below="@id/edit_text_email">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Select your gender"-->
+<!--                        android:layout_marginStart="@dimen/_5sdp"-->
+<!--                        android:id="@+id/gender"-->
+<!--                        />-->
+
+<!--                    <RelativeLayout-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginStart="@dimen/_5sdp"-->
+<!--                        android:layout_below="@+id/gender">-->
+
+<!--                        <RadioGroup-->
+<!--                            android:id="@+id/gender_radiogroup"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:orientation="horizontal">-->
+
+<!--                            <RadioButton-->
+<!--                                android:id="@+id/male_radiobutton"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:text="Male" />-->
+
+<!--                            <RadioButton-->
+<!--                                android:id="@+id/female_radiobutton"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:text="Female" />-->
+
+<!--                            <RadioButton-->
+<!--                                android:id="@+id/other_radiobutton"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:text="Other" />-->
+
+<!--                        </RadioGroup>-->
+
+<!--                    </RelativeLayout>-->
+
+<!--                </RelativeLayout>-->
+
+<!--            </RelativeLayout>-->
+
+<!--            <EditText-->
+<!--                android:id="@+id/edit_text_2"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="@dimen/_40sdp"-->
+<!--                android:hint="Phone Number"-->
+<!--                android:layout_below="@+id/selectagender"-->
+<!--                android:textSize="@dimen/_12sdp"-->
+<!--                android:drawableLeft="@drawable/ic_phone_foreground"/>-->
+
+
+<!--            <RelativeLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="@dimen/_35sdp"-->
+<!--                android:layout_below="@+id/edit_text_2"-->
+<!--                android:id="@+id/edit_text_3"-->
+<!--                android:layout_marginStart="@dimen/_4sdp">-->
+
+<!--                <ImageView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:id="@+id/locimg"-->
+<!--                    android:src="@drawable/ic_location_foreground"/>-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_toRightOf="@+id/locimg"-->
+<!--                    android:gravity="center_vertical"-->
+<!--                    android:textSize="@dimen/_12sdp"-->
+<!--                    android:text="Address"/>-->
+
+<!--                <ImageView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:id="@+id/AddAddress"-->
+<!--                    android:layout_alignParentEnd="true"-->
+<!--                    android:src="@drawable/ic_edit_foreground"/>-->
+
+<!--            </RelativeLayout>-->
+
+<!--        </RelativeLayout>-->
+
+<!--    </RelativeLayout>-->
+
+</RelativeLayout>

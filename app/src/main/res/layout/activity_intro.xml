@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    tools:context=".activity.IntroActivity"
+    android:background="@color/lightpink">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/_60sdp">
+
+                <LinearLayout
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_340sdp"
+                    >
+
+                        <androidx.viewpager2.widget.ViewPager2
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingHorizontal="80dp"
+                            android:id="@+id/viewPagerImageSlider"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/_22sdp"
+                    android:id="@+id/layoutdots"
+
+                    >
+
+                        <ImageView
+                            android:id="@+id/ind1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/selected"
+                            android:layout_marginEnd="@dimen/_4sdp"
+                            android:layout_marginTop="@dimen/_5sdp"/>
+
+                        <ImageView
+                            android:id="@+id/ind2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/unselected"
+                            android:layout_marginEnd="@dimen/_4sdp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                          />
+
+                        <ImageView
+                            android:id="@+id/ind3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/unselected"
+                            android:layout_marginEnd="@dimen/_4sdp"
+                            android:layout_marginTop="@dimen/_5sdp"/>
+
+                        <ImageView
+                            android:id="@+id/ind4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/unselected"
+                            android:layout_marginEnd="@dimen/_4sdp"
+                            android:layout_marginTop="@dimen/_5sdp"/>
+
+                        <ImageView
+                            android:id="@+id/ind5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/unselected"
+                            android:layout_marginEnd="@dimen/_4sdp"
+                            android:layout_marginTop="@dimen/_5sdp"/>
+
+                        <ImageView
+                            android:id="@+id/ind6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/unselected"
+                            android:layout_marginEnd="@dimen/_4sdp"
+                            android:layout_marginTop="@dimen/_5sdp"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@id/text"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="WELCOME TO DESIREDEAL"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_18sdp"/>
+
+                <TextView
+                    android:id="@+id/info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="We have Many Features Such as Shopping Cart, Map, Margin and Categories for you in this app.You can Enjoy in App"
+                    android:textSize="@dimen/_12ssp"
+                    android:inputType="textMultiLine"
+                    android:textAlignment="center"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:gravity="center"/>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                        <com.airbnb.lottie.LottieAnimationView
+                            android:id="@+id/animation_view"
+                            android:layout_width="@dimen/_120sdp"
+                            android:layout_height="@dimen/_120sdp"
+                            app:lottie_fileName="playlotiee.json"
+                            app:lottie_autoPlay="true"
+                            android:layout_gravity="center"
+                            app:lottie_loop="true" />
+
+                        <ImageView
+                            android:id="@+id/play"
+                            android:layout_gravity="center"
+                            android:layout_width="@dimen/_40sdp"
+                            android:layout_height="@dimen/_40sdp"
+                            android:src="@drawable/mainplay"/>
+
+
+
+
+                </FrameLayout>
+
+
+
+
+        </LinearLayout>
+
+
+</LinearLayout>
+
