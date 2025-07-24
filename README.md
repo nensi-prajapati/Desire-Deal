@@ -1,3 +1,17 @@
+# 🛒 Demo Shopping Application
+
+This is a **demo shopping application** created for **learning and UI/UX design practice**.
+
+### 🧩 Key Features:
+- 🔐 Firebase Authentication for login/signup.
+- 💾 **LitePal** and **SharedPreferences** for lightweight data storage.
+- 🗃️ **Room Database** for managing large structured data locally.
+- 💳 **Razorpay** integration for a functional payment module.
+
+---
+
+### 📸 Screenshots
+
 <p align="center">
   <img src="https://github.com/user-attachments/assets/904e6e17-6d01-46d2-8e7a-f64395cecfe5" width="180" />
   <img src="https://github.com/user-attachments/assets/f3369863-f115-419b-97cf-e1b7881bfebf" width="180" />
